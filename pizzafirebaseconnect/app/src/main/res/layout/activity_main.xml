@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Pizza!!"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        android:layout_width="390dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginStart="10dp"
+        android:layout_below = "@+id/textview"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id = "@+id/idEdtCourseName"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField2"
+        android:layout_width="390dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:layout_marginStart="10dp"
+        android:layout_below = "@+id/outlinedTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id = "@+id/idEdtCourseDuration"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField3"
+        android:layout_width="390dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:hint="Crust"
+        android:layout_marginStart="10dp"
+        android:layout_below = "@+id/outlinedTextField2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id = "@+id/idEdtCourseDescription"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <!--Button for adding your course to Firebase-->
+    <Button
+        android:id="@+id/idBtnSubmitCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/outlinedTextField3"
+        android:text="Submit Pizza Details"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/idBtnViewCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/idBtnSubmitCourse"
+        android:text="View Added Pizzas"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>

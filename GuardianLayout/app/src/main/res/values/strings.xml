@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Guardian Layout</string>
+    <string name="name">NAME</string>
+    <string name="reg_no">REG NO</string>
+    <string name="enter">ENTER</string>
+    <string name="names">Name</string>
+</resources>

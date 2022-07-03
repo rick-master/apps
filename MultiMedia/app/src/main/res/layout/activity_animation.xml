@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCircle"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+            android:backgroundTint="@color/black"
+            android:text="Square" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRectangle"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btnCircle"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+            android:backgroundTint="@color/black"
+            android:text="Rectangle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSquare"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/btnRectangle"
+            android:background="@color/black"
+            android:backgroundTint="@color/black"
+            android:text="Circle" />
+
+
+    <ImageView
+        android:id="@+id/canvasView1"
+        android:layout_width="143dp"
+        android:layout_height="169dp"
+        android:layout_column="1"
+        android:layout_below="@+id/btnRectangle"
+        android:layout_gravity="left"
+        android:layout_marginTop="200dp" />
+
+
+
+
+
+
+
+</RelativeLayout>
